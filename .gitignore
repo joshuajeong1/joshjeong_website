@@ -1,0 +1,11 @@
+# Frontend
+client/node_modules/
+client/build/
+
+# Backend
+backend/target/
+backend/.idea/
+
+# System
+.DS_Store
+.env
