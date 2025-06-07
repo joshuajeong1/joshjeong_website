@@ -1,17 +1,9 @@
 
+import Navbar from '../components/Navbar'
 function Home() {
     return (
         <div class="bg-gray-950 text-white min-h-screen">
-            <div class="flex items-center justify-between space-x-10 p-10">
-                <p class="flex h-8 w-8 items-center justify-center rounded-md border p-10">J</p>
-                <div>
-                    <nav class="flex space-x-10 font-bold">
-                        <a href="#about" class="hover:text-blue-500">About</a>
-                        <a href="#experience" class="hover:text-blue-500">Experience</a>
-                        <a href="#work" class="hover:text-blue-500">Work</a>
-                    </nav>
-                </div>
-            </div>
+            <Navbar />
             <div class="flex h-screen flex-col items-center justify-center">
                 <div class="flex flex-col items-start">
                     <p class="font-mono text-4xl font-bold">Creating <span class="animate-gradient bg-gradient-to-r from-emerald-400 via-sky-500 to-violet-500 bg-clip-text text-transparent">vivid</span></p>
@@ -21,7 +13,9 @@ function Home() {
             </div>
             
             <section id="about">
-                
+                <div>
+                    <p>Test File</p>
+                </div>
             </section>
             <section id="education">
 
