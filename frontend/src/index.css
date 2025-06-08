@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(3 7 18);
+}
 @layer utilities {
   @keyframes gradient-right {
     0%,

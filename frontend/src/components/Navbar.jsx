@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-        <div class="fixed top-0 left-0 w-full">
+        <div class="absolute top-0 left-0 w-full">
             <div class="flex items-center justify-between space-x-10 p-10">
                 <p class="flex h-8 w-8 items-center justify-center rounded-md border p-10">J</p>
                 <div>
