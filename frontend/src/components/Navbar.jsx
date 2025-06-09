@@ -6,8 +6,9 @@ function Navbar() {
                 <div>
                     <nav class="flex space-x-10 font-bold">
                         <a href="#about" class="hover:text-blue-500">About</a>
-                        <a href="#experience" class="hover:text-blue-500">Experience</a>
-                        <a href="#work" class="hover:text-blue-500">Work</a>
+                        <a href="#skills" class="hover:text-blue-500">Skills</a>
+                        <a href="#education" class="hover:text-blue-500">Education</a>
+                        <a href="#projects" class="hover:text-blue-500">Projects</a>
                     </nav>
                 </div>
             </div>

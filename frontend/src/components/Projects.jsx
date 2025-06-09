@@ -1,7 +1,7 @@
-function About() {
+function Projects() {
     return (
         <>
         </>
     );
 }
-export default About;
+export default Projects
