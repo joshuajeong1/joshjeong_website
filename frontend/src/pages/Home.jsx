@@ -11,7 +11,7 @@ function Home() {
             <Navbar />
             <Hero />
             <section id="about">
-                <div class="min-h-screen p-20">
+                <div class="min-h-screen p-20 ">
                     <About />
                 </div>
             </section>
