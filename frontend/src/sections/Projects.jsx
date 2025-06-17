@@ -5,8 +5,8 @@ function Projects() {
     
     return (
         <div className="">
-            <h1 className="text-white text-5xl font-bold">Projects</h1>
-            <div className="grid grid-cols-2 grid-rows-3 gap-10 p-20">
+            <h1 className="text-white text-5xl font-bold">Featured Projects</h1>
+            <div className="grid grid-cols-2 grid-rows-3 gap-10 my-10 justify-center items-center">
                 {projectData.map((project, index) => (
                     <>
                     <ProjectCard 
@@ -16,8 +16,10 @@ function Projects() {
                         bullets={project.bullets}
                         skills={project.skills}
                     />
-                    <div className="h-md w-md rounded-lg border-2 border-gray-800 overflow-hidden">
-                        <img src={project.image} />
+                    <div className="flex justify-center">
+                        <div className="h-lg w-lg rounded-lg border-2 border-gray-800 overflow-hidden">
+                            <img src={project.image} />
+                        </div>
                     </div>
                     </>
                 ))}
