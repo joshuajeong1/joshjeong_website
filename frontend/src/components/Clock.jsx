@@ -24,7 +24,7 @@ const Clock = ({ timezone = "America/Phoenix" }) => {
 
   return (
     <div className="text-white text-2xl font-mono flex flex-col justify-center items-center h-full">
-        <p>It is currently</p>
+        <p>For me, it is currently</p>
         <p>{time}</p>
         <p class="text-gray-500">(Phoenix/MST)</p>
     </div>
