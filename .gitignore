@@ -5,7 +5,7 @@ client/build/
 # Backend
 backend/target/
 backend/.idea/
-backend/src/tokens
+backend/tokens
 
 # System
 .DS_Store
