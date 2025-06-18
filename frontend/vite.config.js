@@ -8,6 +8,13 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
+    proxy: {
+      '/api': {
+        target: 'http://172.25.112.1:8080',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
     watch: {
       usePolling: true
     }
