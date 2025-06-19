@@ -10,8 +10,9 @@ import { motion } from 'motion/react';
 function Skills() {
     return (
         <>
-            <div className="grid grid-cols-2 grid-rows-[60px, 3fr] items-start gap-y-10 gap-x-10">
-                <h1 className="bottom-0 font-bold text-5xl col-span-2 mb-5">My <span className="text-indigo-500">Toolbox</span></h1>
+            <h1 className="bottom-0 font-bold text-5xl col-span-2 mb-16">My <span className="text-indigo-500">Toolbox</span></h1>
+            <div className="items-center h-full grid grid-cols-2 grid-rows-[1fr_1fr_1fr] gap-10">
+
                 <div className="flex flex-col gap-y-3">
                     <h1 className="font-bold text-3xl">Frontend</h1>
                     <p className="font-mono">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 

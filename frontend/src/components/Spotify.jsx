@@ -14,7 +14,7 @@ function Spotify() {
     return (
         <div className="flex flex-col items-center rounded-md p-5">
             <p className="font-bold text-xl">My Recent Favorites</p>
-            <div className="flex mt-8 gap-x-2">
+            <div className="flex flex-wrap justify-center mt-8 gap-x-2">
             {tracks.map((track, index) => (
                 <SongCard key={index} title={track.title} artist={track.artist} url={track.albumImg} album={track.albumTitle} spotifyUrl={track.spotifyUrl}/>
             ))}

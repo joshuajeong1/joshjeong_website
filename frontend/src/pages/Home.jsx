@@ -11,12 +11,12 @@ function Home() {
             <Navbar />
             <Hero />
             <section id="about">
-                <div className="min-h-screen p-20">
+                <div className="h-screen p-20">
                     <About />
                 </div>
             </section>
             <section id="skills">
-                <div className="min-h-screen p-20">
+                <div className="h-screen p-20">
                     <Skills />
                 </div>
             </section>
