@@ -44,7 +44,7 @@ export const projectData = [
     description: "Fullstack web application used as a personal website.",
     bullets: [
         "Frontend written in React.js, utilizing Vite, Tailwind CSS, React Motion, and a variety of additional technologies",
-        "Backend written in Java Spring Boot, used for serving file downloads, tracking analytics, and other tasks",
+        "Backend written in Java Spring Boot, used for serving file downloads, tracking analytics, querying Spotify API, and other miscellaneous tasks",
         "Containerized with Docker and deployed using Vercel"
     ],
     skills: [
@@ -53,6 +53,10 @@ export const projectData = [
         { icon: FaCss3Alt, name: "CSS" },
         { icon: SiTailwindcss, name: "Tailwind" },
         { icon: FaDocker, name: "Docker" },
+        { icon: FaSpotify, name: "Spotify API" },
+        { icon: TbBrandFramerMotion, name: "Motion" },
+        { icon: SiSpringboot, name: "Spring Boot" },
+        { icon: FaJava, name: "Java" },
     ],
     image: "https://media.gettyimages.com/id/1770279962/photo/smiling-man-levitating-in-mid-air.jpg?s=612x612&w=gi&k=20&c=JCGG07ipNnVF9FIRPYF6E50ttPLEH31KWkS1U7wT2gg="
   }

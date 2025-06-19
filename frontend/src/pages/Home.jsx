@@ -4,6 +4,7 @@ import Skills from '../sections/Skills'
 import Hero from '../sections/Hero'
 import Projects from '../sections/Projects'
 import About from '../sections/About'
+import Contact from '../sections/Contact'
 
 function Home() {
     return (
@@ -21,8 +22,13 @@ function Home() {
                 </div>
             </section>
             <section id="projects">
-                <div className="h-screen p-20">
+                <div className="min-h-screen p-20">
                     <Projects />
+                </div>
+            </section>
+            <section id="contact">
+                <div className="min-h-screen flex flex-col items-center p-20">
+                    <Contact />
                 </div>
             </section>
         </div>
