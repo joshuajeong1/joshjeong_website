@@ -16,12 +16,12 @@ function Home() {
                 </div>
             </section>
             <section id="skills">
-                <div className="h-screen p-20">
+                <div className="min-h-screen p-20 flex flex-col">
                     <Skills />
                 </div>
             </section>
             <section id="projects">
-                <div className="min-h-screen p-20">
+                <div className="h-screen p-20">
                     <Projects />
                 </div>
             </section>
