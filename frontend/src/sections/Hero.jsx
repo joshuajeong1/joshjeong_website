@@ -11,7 +11,7 @@ function Hero() {
                     <p className="mt-16 text-gray-50">I'm an aspiring developer with experience working with a wide variety of different technologies to create vivid, responsive, efficient, and effective applications.</p>
                     <div className="flex justify-start space-x-3 mt-8">
                         <button className="text-gray-100 bg-gray-800 rounded-md p-3">Contact Me</button>
-                        <button className="text-gray-950 bg-emerald-400 rounded-md p-3">Download CV</button>
+
                     </div>
                 </div>
                 <div className="flex items-center justify-center">

@@ -5,8 +5,8 @@ import Spotify from '../components/Spotify'
 function About() {
     return (
         <>
-            <div className="flex space-x-10 grow">
-                <div className="mt-10 flex w-1/2 flex-col justify-center">
+            <div className="flex items-center space-x-10">
+                <div className="mt-10 flex w-1/2 flex-col">
                     <p className="text-2xl font-bold text-white">Hi! My name is Josh.</p>
                     <p className="mt-8 text-xl text-white">I'm currently a fourth year student at Arizona State University pursuing a degree in Computer Science. While my primary focus is on fullstack development, I have multiple years of experience in a variety of other programming languages as well. Currently, I am looking to contribute my skills in a professional environment where I can gain valuable experience while creating impactful solutions to real world problems.</p>
                     <p className="mt-8 text-xl text-white">When I'm not working on projects, you can find me at the gym, playing video games, or studying foreign languages.</p>
@@ -17,13 +17,13 @@ function About() {
                             <FaLinkedin size={24} />
                         </div>
                         <div>
-                            <button className="rounded-md bg-gray-600 p-3 text-white">Download Resume</button>
+                            <button className="rounded-md bg-emerald-600 p-3 text-white">Download CV</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="ml-10 grid w-1/2 grid-cols-2 grid-rows-2 gap-3">
-                    <div className="col-span-2 bg-gray-700"><Spotify /></div>
+                    <div className="rounded-md col-span-2 bg-gray-700"><Spotify /></div>
                     <div className="rounded-md bg-gray-700"><Clock /></div>
                     <div className="rounded-md bg-gray-700"></div>
                 </div>

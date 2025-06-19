@@ -27,16 +27,11 @@ public class SpotifyController {
         this.spotifyAuth = auth;
     }
 
-    @GetMapping("/test")
-    public String test() {
-        System.out.println(getSongs().get(0).getTitle());
-        return(getSongs().get(0).getArtist());
-    }
     @GetMapping("/songs")
     public List<Song> getSongs() {
         List<Song> songs = new ArrayList<Song>();
         String token = spotifyAuth.getValidToken();
-        String url = "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=8";
+        String url = "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", "Bearer " + token);
@@ -66,7 +61,10 @@ public class SpotifyController {
             String artist = String.join(", ", artistNames);
 
             String albumImg = track.get("album").get("images").get(0).get("url").asText();
-            songs.add(new Song(title, artist, albumImg));
+            String albumTitle = track.get("album").get("name").asText();
+
+            String spotifyUrl = track.get("external_urls").get("spotify").asText();
+            songs.add(new Song(title, artist, albumImg, albumTitle, spotifyUrl));
         }
 
         return songs;
@@ -75,11 +73,15 @@ public class SpotifyController {
         private String title;
         private String artist;
         private String albumImg;
+        private String spotifyUrl;
+        private String albumTitle;
 
-        public Song(String title, String artist, String albumImg) {
+        public Song(String title, String artist, String albumImg, String albumTitle, String spotifyUrl) {
             this.title = title;
             this.artist = artist;
             this.albumImg = albumImg;
+            this.albumTitle = albumTitle;
+            this.spotifyUrl = spotifyUrl;
         }
 
         public String getTitle() {
@@ -90,6 +92,12 @@ public class SpotifyController {
         }
         public String getAlbumImg() {
             return albumImg;
+        }
+        public String getSpotifyUrl() {
+            return spotifyUrl;
+        }
+        public String getAlbumTitle() {
+            return albumTitle;
         }
     }
 }
