@@ -5,6 +5,8 @@ import Spotify from '../components/Spotify'
 import GitHubCalendar from 'react-github-calendar'
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'motion/react';
+import LeftDiv from '../components/LeftDiv'
+import RightDiv from '../components/RightDiv'
 
 function About() {
     const [loading, setLoading] = useState(true);
@@ -34,24 +36,7 @@ function About() {
     return (
         <>
             <div className="h-full flex flex-col xl:flex-row gap-y-10 items-center xl:space-x-10 my-10 xl:my-0">
-                <motion.div className="flex w-full xl:w-1/2 flex-col justify-center"
-                    initial={{
-                        opacity: 0,
-                        x: -100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x:0
-                    }}
-                    viewport={{
-                        once: false,
-                        amount: 0.4
-                    }}
-                    transition={{
-                        type: "easeInOut",
-                        duration: 0.8,
-                    }}
-                >
+                <LeftDiv className="flex w-full xl:w-1/2 flex-col justify-center">
                     <p className="text-center text-lg md:text-xl xl:text-2xl font-bold text-white">Hi! My name is Josh.</p>
                     <p className="text-center xl:text-left mt-8 text-sm md:text-lg xl:text-xl text-white">I'm currently a fourth year student at Arizona State University pursuing a degree in Computer Science. While my primary focus is on fullstack development, I have multiple years of experience in a variety of other programming languages as well. Currently, I am looking to contribute my skills in a professional environment where I can gain valuable experience while creating impactful solutions to real world problems.</p>
                     <p className="text-center xl:text-left mt-8 text-sm md:text-lg xl:text-xl text-white">While I'm not working on projects, I'll usually be at the gym, playing video games, or studying languages.</p>
@@ -65,26 +50,9 @@ function About() {
                             <button className="rounded-md bg-emerald-600 p-3 text-white">Download CV</button>
                         </div>
                     </div>
-                </motion.div>
+                </LeftDiv>
 
-                <motion.div className="xl:ml-10 grid w-full xl:w-1/2 grid-cols-2 grid-rows-2 gap-3"
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x:0
-                    }}
-                    viewport={{
-                        once: false,
-                        amount: 0.4
-                    }}
-                    transition={{
-                        type: "easeInOut",
-                        duration: 0.8,
-                    }}
-                >
+                <RightDiv className="xl:ml-10 grid w-full xl:w-1/2 grid-cols-2 grid-rows-2 gap-3">
                     <div className="rounded-md col-span-2 bg-gray-700"><Spotify /></div>
                     <Clock />
                     <div className="rounded-md bg-gray-700 flex flex-col items-center justify-center h-full">
@@ -105,7 +73,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </RightDiv>
             </div>
         </>
     );

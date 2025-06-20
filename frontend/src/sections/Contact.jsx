@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import { motion } from 'motion/react'
+import LeftDiv from '../components/LeftDiv'
+import RightDiv from '../components/RightDiv'
+
 
 function Contact() {
     const [data, setData] = useState({
@@ -35,24 +38,7 @@ function Contact() {
     return (
         <>
             <div className="flex flex-col mx-auto space-y-5 items-center w-full sm:w-auto">
-                <motion.div className="flex flex-col rounded-xl shadow-xl bg-gray-800 p-6"
-                    initial={{
-                        opacity: 0,
-                        x: -100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x:0
-                    }}
-                    viewport={{
-                        once: false,
-                        amount: 0.4
-                    }}
-                    transition={{
-                        type: "easeInOut",
-                        duration: 0.8,
-                    }}
-                >
+                <LeftDiv className="flex flex-col rounded-xl shadow-xl bg-gray-800 p-6">
                     <h1 className="text-center font-bold text-5xl pb-8 pt-4">Contact Me!</h1>
                     <form onSubmit={formSubmitted} className="p-y-5 space-y-3">
                         <input 
@@ -98,33 +84,16 @@ function Contact() {
                             >Send Message</button>
                         </div>
                     </form>
-                </motion.div>
+                </LeftDiv>
 
-                <motion.div className="w-full bg-gray-800 p-6 rounded-xl flex flex-col xl:flex-row gap-y-3 justify-center items-center gap-x-3"
-                    initial={{
-                        opacity: 0,
-                        x: 100
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        x:0
-                    }}
-                    viewport={{
-                        once: false,
-                        amount: 0.4
-                    }}
-                    transition={{
-                        type: "easeInOut",
-                        duration: 0.8,
-                    }}
-                >
+                <RightDiv className="w-full bg-gray-800 p-6 rounded-xl flex flex-col xl:flex-row gap-y-3 justify-center items-center gap-x-3">
                     <FaLinkedin />
                     <p>joshua-jeong</p>
                     <IoMail />
                     <p>joshua.jeong2@gmail.com</p>
                     <FaGithub />
                     <p>joshuajeong1</p>
-                </motion.div>
+                </RightDiv>
             </div>
         </>
     );
