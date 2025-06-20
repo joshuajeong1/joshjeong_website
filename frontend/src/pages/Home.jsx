@@ -12,17 +12,17 @@ function Home() {
             <Navbar />
             <Hero />
             <section id="about">
-                <div className="h-screen p-20">
+                <div className="min-h-screen p-4 md:p-8 lg:p-12 xl:p-20">
                     <About />
                 </div>
             </section>
             <section id="skills">
-                <div className="min-h-screen p-20 flex flex-col">
+                <div className="min-h-screen p-4 md:p-8 lg:p-12 xl:p-20 flex flex-col">
                     <Skills />
                 </div>
             </section>
             <section id="projects">
-                <div className="min-h-screen p-20">
+                <div className="min-h-screen p-4 md:p-8 lg:p-12 xl:p-20">
                     <Projects />
                 </div>
             </section>
