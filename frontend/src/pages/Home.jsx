@@ -27,7 +27,7 @@ function Home() {
                 </div>
             </section>
             <section id="contact">
-                <div className="min-h-screen flex flex-col p-4 sm:p-6 md:p-8 lg:p-12 xl:p-20">
+                <div className="min-h-screen flex flex-col">
                     <div className="flex-grow flex items-center justify-center">
                         <Contact />
                     </div>
