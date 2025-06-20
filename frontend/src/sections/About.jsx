@@ -2,7 +2,24 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import Clock from '../components/Clock'
 import Spotify from '../components/Spotify'
+import GitHubCalendar from 'react-github-calendar'
 function About() {
+    const selectTwoMonths = contributions => {
+        const currentYear = new Date().getFullYear();
+            const currentMonth = new Date().getMonth();
+            const shownMonths = 2;
+
+            return contributions.filter(activity => {
+                const date = new Date(activity.date);
+                const monthOfDay = date.getMonth();
+
+                return (
+                    date.getFullYear() === currentYear &&
+                    monthOfDay > currentMonth - shownMonths &&
+                    monthOfDay <= currentMonth
+                );
+            });
+        };
     return (
         <>
             <div className="h-full flex items-center space-x-10">
@@ -25,7 +42,22 @@ function About() {
                 <div className="ml-10 grid w-1/2 grid-cols-2 grid-rows-2 gap-3">
                     <div className="rounded-md col-span-2 bg-gray-700"><Spotify /></div>
                     <Clock />
-                    <div className="rounded-md bg-gray-700"></div>
+                    <div className="rounded-md bg-gray-700 flex flex-col items-center justify-center h-full">
+                        <h2 className="text-center w-full text-2xl font-bold mt-5">GitHub Contributions</h2>
+                        <div className="flex-grow flex items-center justify-center">
+                            <GitHubCalendar 
+                                username="joshuajeong1"
+                                blockSize={30}
+                                blockMargin={4}
+                                fontSize={12}
+                                transformData={selectTwoMonths}
+                                labels={{
+                                    totalCount: '{{count}} contributions in the last two months',
+                                }}
+                                hideColorLegend={true}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
