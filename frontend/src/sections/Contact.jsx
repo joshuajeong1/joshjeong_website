@@ -12,12 +12,29 @@ function Contact() {
     }
     const formSubmitted = (e) => {
         e.preventDefault();
+
+        const formData = {
+            name: data.name,
+            subject: data.subject,
+            email: data.email,
+            body: data.message
+        };
+
+        const resp = fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+        alert("Email sent successfully!");
+        
     }
     return (
         <>
             <div className="mx-auto p-6 rounded-2xl shadow-xl bg-gray-800">
                 <h1 className="text-center font-bold text-5xl pb-8 pt-4">Get In Touch</h1>
-                <form className="p-y-5 space-y-3">
+                <form onSubmit={formSubmitted} className="p-y-5 space-y-3">
                     <input 
                     type="text"
                     name="name"
