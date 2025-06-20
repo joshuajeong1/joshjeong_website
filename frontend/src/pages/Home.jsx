@@ -5,7 +5,7 @@ import Hero from '../sections/Hero'
 import Projects from '../sections/Projects'
 import About from '../sections/About'
 import Contact from '../sections/Contact'
-
+import Footer from '../sections/Footer'
 function Home() {
     return (
         <div className="text-white min-h-screen">
@@ -27,8 +27,11 @@ function Home() {
                 </div>
             </section>
             <section id="contact">
-                <div className="min-h-screen flex flex-col items-center p-20">
-                    <Contact />
+                <div className="min-h-screen flex flex-col pt-20">
+                    <div className="flex-grow flex items-center justify-center">
+                        <Contact />
+                    </div>
+                    <Footer />
                 </div>
             </section>
         </div>
