@@ -39,10 +39,10 @@ const Clock = ({ timezone = "America/Phoenix" }) => {
   return (
     <div className={`${isDay ? 'bg-gradient-to-b from-sky-400 via-sky-200 to-sky-50' : 'bg-gray-900'} rounded-md relative`}>
       <div className="absolute w-full">
-        {isDay ? (<SunIcon className="relative top-1/3 left-3/4 h-25 w-25 text-yellow-400 animate-[spin_25s_linear_infinite]"/>) : (<MoonIcon className="relative top-10 left-10 h-16 w-16 text-gray-400"/>)}
+        {isDay ? (<SunIcon className="relative top-1/3 xl:left-3/4 left-3/5 h-16 w-16 lg:h-25 lg:w-25 text-yellow-400 animate-[spin_25s_linear_infinite]"/>) : (<MoonIcon className="relative top-10 left-10 h-16 w-16 text-gray-400"/>)}
       </div>
-      <div className="relative top-1/4 text-white text-2xl font-mono flex flex-col justify-center items-center h-full">
-          <p className={`${isDay ? 'text-black drop-shadow-lg' : 'text-white'}`}>For me, it is currently</p>
+      <div className="relative top-1/4 text-white text-sm md:text-2xl font-mono flex flex-col justify-center items-center h-full">
+          <p className={`${isDay ? 'text-black drop-shadow-lg' : 'text-white'} text-center`}>For me, it is currently</p>
           <p className={`${isDay ? 'text-black drop-shadow-lg' : 'text-white'}`}>{time}</p>
           <p className="text-gray-400">(Phoenix/MST)</p>
       </div>
@@ -55,8 +55,8 @@ const Clock = ({ timezone = "America/Phoenix" }) => {
         {isDay && (
           <>
           <div className="relative w-full h-full">
-            <CloudIcon className="absolute left-2/5 top-5 h-32 text-white"/>
-            <CloudIcon className="absolute left-1/8 top-15 h-32 text-white" />
+            <CloudIcon className="absolute left-2/5 top-5 h-20 xl:h-32 text-white"/>
+            <CloudIcon className="absolute left-1/8 top-15 h-20 xl:h-32 text-white" />
           </div>
           </>
         )}

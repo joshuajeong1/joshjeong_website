@@ -43,8 +43,8 @@ export const projectData = [
     title: "Portfolio Website",
     description: "Fullstack web application used as a personal website.",
     bullets: [
-        "Frontend written in React.js, utilizing Vite, Tailwind CSS, React Motion, and a variety of additional technologies",
-        "Backend written in Java Spring Boot, used for serving file downloads, tracking analytics, querying Spotify API, and other miscellaneous tasks",
+        "Frontend written in React.js, Vite, Tailwind CSS, React Motion",
+        "Backend written in Java Spring Boot to query APIs, handle contact form, serve downloads",
         "Containerized with Docker and deployed using Vercel"
     ],
     skills: [

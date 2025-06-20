@@ -27,8 +27,9 @@ function Skills() {
                         type: "easeInOut",
                         duration: 0.8,
                     }}
-            >My <span className="text-indigo-500">Toolbox</span></motion.h1>
-            <div className="flex-1 items-center grid grid-cols-2 grid-rows-[1fr_1fr_1fr] gap-10">
+            >
+                My <span className="text-indigo-500">Toolbox</span></motion.h1>
+            <div className="flex-1 items-center flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-[1fr_1fr_1fr] gap-10">
                 <motion.div className="flex flex-col gap-y-3"
                     initial={{
                         opacity: 0,
@@ -47,13 +48,13 @@ function Skills() {
                         duration: 0.8,
                     }}
                 >
-                    <h1 className="font-bold text-3xl">Frontend</h1>
-                    <p className="font-mono">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 
+                    <h1 className="font-bold text-3xl text-center xl:text-start">Frontend</h1>
+                    <p className="font-mono text-center xl:text-start">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 
                     However, I am always striving to add to my stack, improving my efficiency and capabilities in the process.
                     </p>
                 </motion.div>
 
-                <motion.div className="flex flex-wrap justify-start gap-3"
+                <motion.div className="flex flex-wrap justify-center xl:justify-start gap-3"
                     initial={{
                         opacity: 0,
                         x: 100
@@ -98,13 +99,13 @@ function Skills() {
                         duration: 0.8,
                     }}
                 >
-                    <h1 className="font-bold text-3xl">Backend</h1>
-                    <p className="font-mono">I use a variety of technologies when developing robust, maintainable, and efficient backend systems.
+                    <h1 className="font-bold text-3xl text-center xl:text-start">Backend</h1>
+                    <p className="font-mono text-center xl:text-start">I use a variety of technologies when developing robust, maintainable, and efficient backend systems.
                         Similar to my growing frontend toolkit, I am actively learning additional technologies to become more and more flexible.
                     </p>
                 </motion.div>
 
-                <motion.div className="flex flex-wrap justify-start gap-3"
+                <motion.div className="flex flex-wrap justify-center xl:justify-start gap-3"
                     initial={{
                         opacity: 0,
                         x: 100
@@ -151,12 +152,12 @@ function Skills() {
                         duration: 0.8,
                     }}
                 >
-                    <h1 className="font-bold text-3xl">Other Skills</h1>
-                    <p className="font-mono">While hard to categorize, I use multiple other technologies for many different purposes, whether it is developing software or supporting my fullstack projects.
+                    <h1 className="font-bold text-3xl text-center xl:text-start">Other Skills</h1>
+                    <p className="font-mono text-center xl:text-start">While hard to categorize, I use multiple other technologies for many different purposes, whether it is developing software or supporting my fullstack projects.
                     </p>
                 </motion.div>
 
-                <motion.div className="flex flex-wrap justify-start gap-3"
+                <motion.div className="flex flex-wrap justify-center xl:justify-start gap-3"
                     initial={{
                         opacity: 0,
                         x: 100
