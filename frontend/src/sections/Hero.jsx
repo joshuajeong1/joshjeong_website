@@ -10,7 +10,7 @@ function Hero() {
                     <p className="text-center xl:text-left mt-8 text-xl sm:text-2xl xl:text-3xl text-gray-300">Fullstack Developer and Software Engineer</p>
                     <p className="text-center xl:text-left mt-8 text-sm sm:text-base text-gray-50 max-w-prose">I'm an aspiring developer with experience working with a wide variety of different technologies to create vivid, responsive, efficient, and effective applications.</p>
                     <div className="justify-center xl: flex xl:justify-start space-x-3 mt-8">
-                        <button className="text-gray-100 bg-gray-800 rounded-md p-3">Contact Me</button>
+                        <a href="#contact" className="text-gray-100 bg-gray-800 rounded-md p-3">Contact Me</a>
 
                     </div>
                 </div>

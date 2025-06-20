@@ -1,5 +1,5 @@
 import { SiTailwindcss, SiSpringboot, SiMysql, SiMongodb, SiCplusplus  } from "react-icons/si";
-import { FaReact, FaCss3Alt, FaHtml5, FaSwift, FaLaravel, FaDatabase, FaGithub, FaDocker, FaSpotify } from "react-icons/fa";
+import { FaReact, FaCss3Alt, FaHtml5, FaSwift, FaLaravel, FaDatabase, FaGithub, FaDocker, FaSpotify, FaMapMarkedAlt } from "react-icons/fa";
 import { FaGolang, FaJava, FaArrowsSpin } from "react-icons/fa6";
 import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -21,7 +21,7 @@ export const projectData = [
       { icon: SiMysql, name: "MySQL" }
     
     ],
-    image: "https://media.gettyimages.com/id/1770279962/photo/smiling-man-levitating-in-mid-air.jpg?s=612x612&w=gi&k=20&c=JCGG07ipNnVF9FIRPYF6E50ttPLEH31KWkS1U7wT2gg="
+    image: "/asucapstonejudging.png"
   },
   {
     title: "Music Map",
@@ -35,9 +35,10 @@ export const projectData = [
       { icon: FaSwift, name: "Swift" },
       { icon: FaGithub, name: "GitHub" },
       { icon: FaSpotify, name: "Spotify API"},
-      { icon: FaDatabase, name: "Apple CoreData"}
+      { icon: FaDatabase, name: "Apple CoreData"},
+      { icon: FaMapMarkedAlt, name: "Apple MapKit"}
     ],
-    image: "https://media.gettyimages.com/id/1770279962/photo/smiling-man-levitating-in-mid-air.jpg?s=612x612&w=gi&k=20&c=JCGG07ipNnVF9FIRPYF6E50ttPLEH31KWkS1U7wT2gg="
+    image: "/musicmap.PNG"
   },
   {
     title: "Portfolio Website",
@@ -49,8 +50,6 @@ export const projectData = [
     ],
     skills: [
         { icon: FaReact, name: "React.js" },
-        { icon: FaHtml5, name: "HTML5" },
-        { icon: FaCss3Alt, name: "CSS" },
         { icon: SiTailwindcss, name: "Tailwind" },
         { icon: FaDocker, name: "Docker" },
         { icon: FaSpotify, name: "Spotify API" },
