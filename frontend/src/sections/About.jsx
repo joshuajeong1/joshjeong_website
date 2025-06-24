@@ -12,7 +12,7 @@ function About() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 1000);
+        const timer = setTimeout(() => setLoading(false), 3000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -58,7 +58,7 @@ function About() {
                     <div className="rounded-md bg-gray-700 flex flex-col items-center justify-center h-full">
                         <h2 className="text-center w-full text-2xl font-bold mt-5">GitHub Contributions</h2>
                         <div className={`flex-grow flex items-center justify-center overflow-hidden ${loading ? 'opacity-0' : 'opacity-100'}`}>
-                            <div className="scale-60 md:scale-75 lg:scale-85 xl:scale-100">
+                            <div className="scale-60 md:scale-75 lg:scale-85 2xl:scale-100">
                                 <GitHubCalendar 
                                     username="joshuajeong1"
                                     blockSize={30}
