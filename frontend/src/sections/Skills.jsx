@@ -12,11 +12,11 @@ function Skills() {
     return (
         <>
             <LeftDiv className="bottom-0 col-span-2 mb-16">
-                <h1 className="font-bold text-5xl">My <span className="text-indigo-500">Toolbox</span></h1>
+                <h1 className="font-bold text-5xl">My <span className="text-emerald-400">Toolbox</span></h1>
             </LeftDiv>
             <div className="flex-1 items-center flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-[1fr_1fr_1fr] gap-10">
                 <LeftDiv className="flex flex-col gap-y-3">
-                    <h1 className="font-bold text-3xl text-center xl:text-start">Frontend</h1>
+                    <h1 className="text-emerald-400 font-bold text-3xl text-center xl:text-start">Frontend</h1>
                     <p className="text-center xl:text-start">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 
                     However, I am always striving to add to my stack, improving my efficiency and capabilities in the process.
                     </p>
@@ -33,7 +33,7 @@ function Skills() {
                 </RightDiv>
 
                 <LeftDiv className="flex flex-col gap-y-3">
-                    <h1 className="font-bold text-3xl text-center xl:text-start">Backend</h1>
+                    <h1 className="text-emerald-400 font-bold text-3xl text-center xl:text-start">Backend</h1>
                     <p className="text-center xl:text-start">I use a variety of technologies when developing robust, maintainable, and efficient backend systems.
                         Similar to my growing frontend toolkit, I am actively learning additional technologies to become more and more flexible.
                     </p>
@@ -50,7 +50,7 @@ function Skills() {
                 </RightDiv>
 
                 <LeftDiv className="flex flex-col gap-y-3">
-                    <h1 className="font-bold text-3xl text-center xl:text-start">Other Skills</h1>
+                    <h1 className="text-emerald-400 font-bold text-3xl text-center xl:text-start">Other Skills</h1>
                     <p className="text-center xl:text-start">While hard to categorize, I use multiple other technologies for many different purposes, whether it is developing software or supporting my fullstack projects.
                     </p>
                 </LeftDiv>
