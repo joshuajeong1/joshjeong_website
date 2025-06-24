@@ -46,8 +46,8 @@ function About() {
                             <a href="mailto:joshua.jeong2@gmail.com"><IoMail size={24} /></a>
                             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-jeong/"><FaLinkedin size={24} /></a>
                         </div>
-                        <div>
-                            <button className="rounded-md bg-emerald-600 p-3 text-white">Download CV</button>
+                        <div className="flex justify-items-center">
+                            <a href="resume.pdf" download className="rounded-md bg-emerald-600 p-3 text-white">Download CV</a>
                         </div>
                     </div>
                 </LeftDiv>
