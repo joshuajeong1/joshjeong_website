@@ -17,7 +17,7 @@ function Skills() {
             <div className="flex-1 items-center flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-[1fr_1fr_1fr] gap-10">
                 <LeftDiv className="flex flex-col gap-y-3">
                     <h1 className="font-bold text-3xl text-center xl:text-start">Frontend</h1>
-                    <p className="font-mono text-center xl:text-start">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 
+                    <p className="text-center xl:text-start">I have created multiple web applications using a variety of technologies, with the ones I am most comfortable with listed here. 
                     However, I am always striving to add to my stack, improving my efficiency and capabilities in the process.
                     </p>
                 </LeftDiv>
@@ -34,7 +34,7 @@ function Skills() {
 
                 <LeftDiv className="flex flex-col gap-y-3">
                     <h1 className="font-bold text-3xl text-center xl:text-start">Backend</h1>
-                    <p className="font-mono text-center xl:text-start">I use a variety of technologies when developing robust, maintainable, and efficient backend systems.
+                    <p className="text-center xl:text-start">I use a variety of technologies when developing robust, maintainable, and efficient backend systems.
                         Similar to my growing frontend toolkit, I am actively learning additional technologies to become more and more flexible.
                     </p>
                 </LeftDiv>
@@ -51,7 +51,7 @@ function Skills() {
 
                 <LeftDiv className="flex flex-col gap-y-3">
                     <h1 className="font-bold text-3xl text-center xl:text-start">Other Skills</h1>
-                    <p className="font-mono text-center xl:text-start">While hard to categorize, I use multiple other technologies for many different purposes, whether it is developing software or supporting my fullstack projects.
+                    <p className="text-center xl:text-start">While hard to categorize, I use multiple other technologies for many different purposes, whether it is developing software or supporting my fullstack projects.
                     </p>
                 </LeftDiv>
 
