@@ -2,11 +2,26 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 body {
   background-color: rgb(3 7 18);
 }
 @layer utilities {
-  
+  @keyframes gradient-right {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  .animate-gradient {
+    background-size: 300% 300%;
+    animation: gradient-right 5s ease infinite;
+  }
+  .raleway-font {
+    font-family: 'Raleway', sans-serif;
+  }
 }
-
