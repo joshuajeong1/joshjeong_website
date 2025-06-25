@@ -80,7 +80,7 @@ function Contact() {
                         <div className="flex justify-center">
                             <button
                                 type="submit"
-                                className="bg-emerald-500 px-4 py-2 rounded-md text-white mt-4 hover:bg-emerald-600 transition"
+                                className="bg-emerald-500 px-4 py-2 rounded-md text-white mt-4 hover:bg-emerald-600 transition cursor-pointer"
                             >Send Message</button>
                         </div>
                     </form>

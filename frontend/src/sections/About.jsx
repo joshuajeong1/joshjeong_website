@@ -42,12 +42,12 @@ function About() {
                     <p className="text-center xl:text-left mt-8 text-sm md:text-lg xl:text-xl text-white">While I'm not working on projects, I'll usually be at the gym, playing video games, or studying languages.</p>
                     <div className="mt-16 flex justify-center xl:justify-start space-x-3">
                         <div className="flex items-center space-x-5 rounded-md bg-gray-600 p-3">
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/joshuajeong1"><FaGithub size={24}/></a>
-                            <a href="mailto:joshua.jeong2@gmail.com"><IoMail size={24} /></a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-jeong/"><FaLinkedin size={24} /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/joshuajeong1"><FaGithub size={24} className="text-white hover:scale-110 transform transition-transform duration-300" /></a>
+                            <a href="mailto:joshua.jeong2@gmail.com"><IoMail size={24} className="text-white hover:scale-110 transform transition-transform duration-300" /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-jeong/"><FaLinkedin size={24} className="text-white hover:scale-115 transform transition-transform duration-250" /></a>
                         </div>
                         <div className="flex justify-items-center">
-                            <a href="resume.pdf" download className="rounded-md bg-emerald-600 p-3 text-white">Download CV</a>
+                            <a href="resume.pdf" download className="rounded-md bg-emerald-500 p-3 text-white hover:bg-emerald-600">Download CV</a>
                         </div>
                     </div>
                 </LeftDiv>

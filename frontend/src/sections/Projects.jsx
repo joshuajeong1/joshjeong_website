@@ -22,6 +22,7 @@ function Projects() {
                                 description={project.description}
                                 bullets={project.bullets}
                                 skills={project.skills}
+                                link={project.link}
                             />
                         </LeftDiv>
                     </div>

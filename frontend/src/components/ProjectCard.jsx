@@ -1,12 +1,17 @@
 import SkillCard from './SkillCard'
-import { FaStarOfLife } from "react-icons/fa";
+import { FaStarOfLife, FaExternalLinkAlt } from "react-icons/fa";
 
-function ProjectCard({title, description, bullets = [], skills = []}) {
+function ProjectCard({title, description, bullets = [], skills = [], link}) {
     return(
         <>
         <div className="col-span-1 text-center xl:text-start">
             <div>
-                <h1 className="text-2xl font-bold text-emerald-500">{title}</h1>
+                <div className="text-2xl font-bold text-emerald-500">
+                    <div className="flex justify-center gap-x-3">
+                        {title}
+                        <a href={link} target="blank_"><FaExternalLinkAlt className="hover:scale-115 transform transition-transform duration-250"/></a>
+                    </div>
+                </div>
                 <p className="mt-4 text-gray-400 max-w-3xl">{description}</p>
                 <ul className="mt-8 text-white items-center xl:items-start flex flex-col mx-auto xl:mx-0 max-w-3xl"> 
                     {bullets.map((point, index) => (
