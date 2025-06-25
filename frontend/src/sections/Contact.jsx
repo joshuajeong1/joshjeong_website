@@ -37,7 +37,7 @@ function Contact() {
     }
     return (
         <>
-            <div className="flex flex-col mx-auto space-y-5 items-center w-full sm:w-auto">
+            <div className="flex flex-col mx-auto space-y-5 items-center w-full sm:w-auto p-5">
                 <LeftDiv className="flex flex-col rounded-xl shadow-xl bg-gray-800 p-6">
                     <h1 className="text-center font-bold text-5xl pb-8 pt-4">Contact Me!</h1>
                     <form onSubmit={formSubmitted} className="p-y-5 space-y-3">
