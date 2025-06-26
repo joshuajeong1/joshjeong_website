@@ -11,6 +11,8 @@ export default defineConfig({
     svgr(),
   ],
   server: {
+    host: true,
+    port: 8080,
     proxy: {
       '/api': {
         target: 'http://172.25.112.1:8080',

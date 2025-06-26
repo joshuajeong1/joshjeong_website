@@ -3,10 +3,11 @@ import SongCard from './SongCard';
 
 
 function Spotify() {
+    const baseUrl = import.meta.env.VITE_API_BASE_URL;
     const [tracks, setTracks] = useState([]);
 
     useEffect(() => {
-    fetch('/api/songs')
+    fetch(`${baseUrl}/api/songs`)
         .then((response) => response.json())
         .then((data) => { setTracks(data); })
     }, []);

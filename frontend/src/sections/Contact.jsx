@@ -7,6 +7,8 @@ import RightDiv from '../components/RightDiv'
 
 
 function Contact() {
+    const baseUrl = import.meta.env.VITE_API_BASE_URL;
+    const [ submitted, setSubmitted ] = useState(false);
     const [data, setData] = useState({
             name: "",
             subject: "",
@@ -26,14 +28,21 @@ function Contact() {
             body: data.message
         };
 
-        const resp = fetch("/api/contact", {
+        const resp = fetch(`${baseUrl}/api/contact`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(formData),
         });
-        
+        setData({
+            name: "",
+            subject: "",
+            email: "",
+            message: "",
+        });
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 10000);
     }
     return (
         <>
@@ -77,11 +86,15 @@ function Contact() {
                         onChange={formChanged}
                         required
                         />
+                        
                         <div className="flex justify-center">
-                            <button
-                                type="submit"
-                                className="bg-emerald-500 px-4 py-2 rounded-md text-white mt-4 hover:bg-emerald-600 transition cursor-pointer"
-                            >Send Message</button>
+                            <p className={`text-emerald-600 transition-opacity duration-500 ${submitted ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>Thanks for reaching out! I'll respond as soon as possible.</p>
+                        </div>
+                        <div className="flex justify-center">
+                                <button
+                                    type="submit"
+                                    className="bg-emerald-500 px-4 py-2 rounded-md text-white mt-4 hover:bg-emerald-600 transition cursor-pointer"
+                                >Send Message</button>
                         </div>
                     </form>
                 </LeftDiv>

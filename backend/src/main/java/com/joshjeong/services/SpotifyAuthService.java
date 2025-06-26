@@ -15,10 +15,10 @@ import java.util.Base64;
 
 @Service
 public class SpotifyAuthService {
-    @Value("${SPOTIFY_CLIENT_ID}")
+    @Value("${spotify.client-id}")
     private String clientId;
 
-    @Value("${SPOTIFY_CLIENT_SECRET}")
+    @Value("${spotify.client-secret}")
     private String clientSecret;
 
     private static final String TOKEN_FILE = "tokens/spotify.json";
