@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for backend-bold-moon-2423 on 2025-06-26T03:13:52-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'backend-bold-moon-2423'
+primary_region = 'dfw'
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[env]
+  SPOTIFY_CLIENT_ID = "1330f8a79a5440f8abe87e21dca502f9"
+  EMAIL_USERNAME = "joshua.jeong2@gmail.com"
+  
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
