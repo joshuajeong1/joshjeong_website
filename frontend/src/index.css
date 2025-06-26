@@ -10,10 +10,42 @@ body {
 
 @theme {
   --breakpoint-3xl: 120rem;
+
+  --animate-spin: circular-spin 2s linear infinite;
+
+  @keyframes circular-spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  --animate-bg: bgShift 15s ease-in-out infinite;
+
+  @keyframes bgShift {
+    0% {
+      backgroundPosition: 0% 50%;
+    }
+    100% {
+      backgroundPosition: 100% 50%;
+    }
+  }
 }
 
 @layer utilities {
   .raleway-font {
     font-family: 'Raleway', sans-serif;
+  }
+
+  .border-wrapper {
+    @apply relative bg-gradient-to-b from-gray-800 to-gray-600;
+  }
+
+  .border-wrapper::before {
+    background: conic-gradient(
+      rgba(52, 211, 153, 0.4) 0deg,
+      rgba(16,185,129,0.4) 0deg,
+      transparent 80deg
+    );
+    @apply absolute w-full h-full content-[''] animate-spin
   }
 }

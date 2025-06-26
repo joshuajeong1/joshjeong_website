@@ -6,7 +6,7 @@ function Projects() {
     
     return (
         <div className="mt-8">
-            <LeftDiv className="text-white text-3xl md:text-4xl xl:text-5xl font-bold text-center xl:text-start">Featured Projects</LeftDiv>
+            <LeftDiv className="text-white text-3xl md:text-4xl xl:text-5xl font-bold text-center xl:text-start">Featured <span className="text-emerald-500">Projects</span></LeftDiv>
             <div className="grid grid-cols-1 3xl:grid-cols-2 gap-x-10 my-16 gap-y-16">
                 {projectData.map((project, index) => (
                     <div key={index} className="flex flex-col xl:flex-row items-center gap-6">

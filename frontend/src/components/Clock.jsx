@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon, CloudIcon } from '@heroicons/react/24/solid';
-import { Canvas } from "@react-three/fiber"
-import { Stars } from "@react-three/drei"
+
 
 const Clock = ({ timezone = "America/Phoenix" }) => {
   const [time, setTime] = useState("");

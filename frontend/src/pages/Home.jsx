@@ -7,8 +7,9 @@ import About from '../sections/About'
 import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
 function Home() {
+
     return (
-        <div className="text-white min-h-screen">
+        <div className="text-white min-h-screen raleway-font">
             <Navbar />
             <Hero />
             <section id="about">
