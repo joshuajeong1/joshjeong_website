@@ -59,7 +59,7 @@ export const projectData = [
         { icon: SiSpringboot, name: "Spring Boot" },
         { icon: FaJava, name: "Java" },
     ],
-    image: "https://media.gettyimages.com/id/1770279962/photo/smiling-man-levitating-in-mid-air.jpg?s=612x612&w=gi&k=20&c=JCGG07ipNnVF9FIRPYF6E50ttPLEH31KWkS1U7wT2gg=",
+    image: "/portfolio.PNG",
     link: "https://github.com/joshuajeong1/joshjeong_website",
   }
 ];
