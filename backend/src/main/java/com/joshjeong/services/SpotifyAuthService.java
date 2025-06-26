@@ -21,7 +21,9 @@ public class SpotifyAuthService {
     @Value("${spotify.client-secret}")
     private String clientSecret;
 
-    private static final String TOKEN_FILE = "tokens/spotify.json";
+    @Value("${spotify.refresh-token}")
+    private String refreshToken;
+
     private String currentToken = "";
     private long expiresAt = 0;
 
@@ -43,9 +45,6 @@ public class SpotifyAuthService {
     private void refreshToken() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         RestTemplate restTemplate = new RestTemplate();
-
-        JsonNode jsonNode = mapper.readTree(new File(TOKEN_FILE));
-        String refreshToken = jsonNode.get("refresh_token").asText();
 
         String body = "grant_type=refresh_token" + "&refresh_token=" + URLEncoder.encode(refreshToken, StandardCharsets.UTF_8);
 
