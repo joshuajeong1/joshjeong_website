@@ -4,6 +4,7 @@ import { FaGolang, FaJava, FaArrowsSpin } from "react-icons/fa6";
 import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill } from "react-icons/ri";
+import { motion } from 'motion/react';
 import LeftDiv from '../components/LeftDiv'
 import RightDiv from '../components/RightDiv'
 

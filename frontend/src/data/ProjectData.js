@@ -1,8 +1,10 @@
-import { SiTailwindcss, SiSpringboot, SiMysql, SiMongodb, SiCplusplus  } from "react-icons/si";
+import { SiTailwindcss, SiSpringboot, SiMysql, SiTypescript, SiMongodb, SiCplusplus, SiPostgresql, SiExpress, SiPrisma  } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import { FaReact, FaCss3Alt, FaHtml5, FaSwift, FaLaravel, FaDatabase, FaGithub, FaDocker, FaSpotify, FaMapMarkedAlt } from "react-icons/fa";
 import { FaGolang, FaJava, FaArrowsSpin } from "react-icons/fa6";
 import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
+
 
 export const projectData = [
   {
@@ -61,5 +63,26 @@ export const projectData = [
     ],
     image: "/portfolio.PNG",
     link: "https://github.com/joshuajeong1/joshjeong_website",
+  },
+  {
+    title: "Yesim LLC Scheduling Application",
+    description: "Customized scheduling and payroll tracking application used by a local business. (Placeholder names used in image for privacy). ",
+    bullets: [
+      "Frontend written in Next.js (TypeScript), Tailwind",
+      "Backend written in Express using Prisma to access a PostgreSQL database",
+      "Authentication with JWT",
+      "Containizered with Docker and deployed using Vercel",
+    ],
+    skills: [
+      { icon: RiNextjsFill, name: "Next.js" },
+      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiTailwindcss, name: "Tailwind" },
+      { icon: FaDocker, name: "Docker" },
+      { icon: SiExpress, name: "Express" },
+      { icon: SiPostgresql, name: "PostgreSQL" },
+      { icon: SiPrisma, name: "Prisma" },      
+    ],
+    image: "/yesim.png",
+    link: "https://github.com/joshuajeong1/yesim_app",
   }
 ];
