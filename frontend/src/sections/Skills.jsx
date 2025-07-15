@@ -1,9 +1,9 @@
-import { SiTailwindcss, SiSpringboot, SiMysql, SiMongodb, SiCplusplus  } from "react-icons/si";
-import { FaReact, FaCss3Alt, FaHtml5, FaSwift, FaLaravel, FaPython, FaGithub, FaDocker } from "react-icons/fa";
+import { SiTailwindcss, SiSpringboot, SiMysql, SiMongodb, SiCplusplus, SiTypescript, SiPostgresql, SiExpress, SiPrisma} from "react-icons/si";
+import { FaReact, FaCss3Alt, FaHtml5, FaSwift, FaLaravel, FaPython, FaGithub, FaDocker, FaNodeJs } from "react-icons/fa";
 import { FaGolang, FaJava, FaArrowsSpin } from "react-icons/fa6";
 import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { LuSword } from "react-icons/lu";
+import { RiNextjsFill } from "react-icons/ri";
 import { motion } from 'motion/react';
 import LeftDiv from '../components/LeftDiv'
 import RightDiv from '../components/RightDiv'
@@ -24,12 +24,15 @@ function Skills() {
 
                 <RightDiv className="flex flex-wrap justify-center xl:justify-start gap-3">
                     <Skill icon={<IoLogoJavascript size={50} className="text-[#F7DF1E]" />} name="JavaScript"/>
+                    <Skill icon={<SiTypescript size={50} className="text-[#3178C6]" />} name="TypeScript" />
                     <Skill icon={<FaReact size={50} className="text-[#61DAFB]"/>} name="React.js" />
+                    <Skill icon={<RiNextjsFill size={50} className="text-black"/>} name="Next.js" />
                     <Skill icon={<SiTailwindcss size={50} className="text-[#06B6D4]" />} name="Tailwind" />
                     <Skill icon={<FaHtml5 size={50} className="text-[#E34F26]" />} name="HTML5" />
                     <Skill icon={<FaCss3Alt size={50} className="text-[#264DE4]" />} name="CSS" />
                     <Skill icon={<TbBrandFramerMotion size={50} className="text-purple-500" />} name="Motion" />
                     <Skill icon={<FaSwift size={50} className="text-[#F05138]" />} name="Swift"/>
+
                 </RightDiv>
 
                 <LeftDiv className="flex flex-col gap-y-3">
@@ -41,12 +44,15 @@ function Skills() {
 
                 <RightDiv className="flex flex-wrap justify-center xl:justify-start gap-3">
                     <Skill icon={<SiSpringboot size={50} className="text-[#6DB33F]"/>} name="Spring Boot" />
+                    <Skill icon={<SiExpress size={50} className="text-black" />} name="Express.js" />
                     <Skill icon={<FaPython size={50} className="text-[#06B6D4]" />} name="Python" />
                     <Skill icon={<FaLaravel size={50} className="text-[#FF2D20]" />} name="PHP Laravel" />
+                    <Skill icon={<SiPrisma size={50} className="" />} name="Prisma" />
                     <Skill icon={<FaGolang size={50} className="text-[#00ADD8]" />} name="Go" />
                     <Skill icon={<TbBrandCSharp size={50} className="text-white" />} name="C#" />
                     <Skill icon={<SiMysql size={50} className="text-[#4479A1]" />} name="SQL" />
                     <Skill icon={<SiMongodb size={50} className="text-[#47A248]" />} name="MongoDB" />
+                    <Skill icon={<SiPostgresql size={50} className="text-[#0064a5]" />} name="Postgresql" />
                 </RightDiv>
 
                 <LeftDiv className="flex flex-col gap-y-3">
@@ -60,6 +66,7 @@ function Skills() {
                     <Skill icon={<FaGithub size={50} className="text-[#181717]" />} name="GitHub" />
                     <Skill icon={<SiCplusplus size={50} className="text-[#00599C]" />} name="C++" />
                     <Skill icon={<FaJava size={50} className="text-white" />} name="Java" />
+                    <Skill icon={<FaNodeJs size={50} className="text-[#215732]" />} name="Node.js" />
                     <Skill icon={<FaArrowsSpin size={50} className="text-blue-300" />} name="Agile" />
                 </RightDiv>
             </div>
